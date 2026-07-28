@@ -411,7 +411,7 @@ function initTerminalAI() {
     <strong>CGPA:</strong> 7.6 / 10.0 | Graduation: 2026`,
 
     resume: `📄 <strong>Official Placement Resume:</strong><br>
-    Click to view / print printable resume: <a href="assets/resume/resume.html" target="_blank" style="color:var(--accent-cyan);">assets/resume/resume.html ↗</a>`,
+    Click to view / print official resume PDF: <a href="assets/resume/resume.pdf" target="_blank" style="color:var(--accent-cyan);">assets/resume/resume.pdf ↗</a>`,
 
     certifications: `- NPTEL: Human Computer Interaction (Elite Grade)<br>
     - EduPyramids IIT Bombay: JavaScript Training<br>
