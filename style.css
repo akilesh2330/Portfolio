@@ -59,14 +59,12 @@ body {
   overflow-x: hidden;
   position: relative;
   transition: background-color 0.3s ease, color 0.3s ease;
-  cursor: url('assets/icons/cursor-default.svg') 3 2, auto;
+  cursor: none;
 }
 
-/* Custom themed cursor for interactive elements */
-a, button, .btn, .skill-card, .project-card, .cert-card,
-.nav-link, .nav-action-btn, .mobile-menu-btn, input, textarea,
-[role="button"], .tab-btn, .filter-btn {
-  cursor: url('assets/icons/cursor-pointer.svg') 7 2, pointer;
+/* Hide native cursor everywhere */
+*, *::before, *::after {
+  cursor: none !important;
 }
 
 /* Preloader Loading Screen */
@@ -123,7 +121,7 @@ a, button, .btn, .skill-card, .project-card, .cert-card,
   transition: width 0.1s ease-out;
 }
 
-/* Custom Glow Pointer */
+/* Custom Glow Pointer - large ambient aura */
 .custom-cursor-glow {
   position: fixed;
   width: 350px;
@@ -136,26 +134,45 @@ a, button, .btn, .skill-card, .project-card, .cert-card,
   transition: transform 0.08s ease-out;
 }
 
-/* Small cyan dot that follows cursor precisely */
+/* Glowing cyan dot - the actual visible cursor */
 .cursor-dot {
   position: fixed;
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background: var(--accent-cyan);
-  box-shadow: 0 0 12px rgba(0, 242, 254, 0.8), 0 0 24px rgba(0, 242, 254, 0.4);
+  box-shadow: 0 0 12px rgba(0, 242, 254, 0.9), 0 0 30px rgba(0, 242, 254, 0.5);
   pointer-events: none;
   transform: translate(-50%, -50%);
-  z-index: 10000;
-  transition: width 0.2s ease, height 0.2s ease, background 0.2s ease;
+  z-index: 10002;
+  transition: width 0.25s ease, height 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
 }
 
-/* Cursor dot expands on hover over interactive elements */
+/* Outer ring that surrounds the dot */
+.cursor-ring {
+  position: fixed;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 242, 254, 0.5);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 10001;
+  transition: width 0.3s ease, height 0.3s ease, border-color 0.3s ease, transform 0.15s ease-out;
+}
+
+/* Hover state: dot expands, ring grows, color shifts to purple */
 .cursor-dot.hovering {
-  width: 14px;
-  height: 14px;
+  width: 6px;
+  height: 6px;
   background: var(--accent-purple);
-  box-shadow: 0 0 16px rgba(127, 0, 255, 0.8), 0 0 32px rgba(127, 0, 255, 0.4);
+  box-shadow: 0 0 16px rgba(127, 0, 255, 0.9), 0 0 40px rgba(127, 0, 255, 0.5);
+}
+
+.cursor-ring.hovering {
+  width: 52px;
+  height: 52px;
+  border-color: rgba(127, 0, 255, 0.7);
 }
 
 /* Background Canvas */

@@ -616,33 +616,61 @@ function initStatsCounter() {
  * 12. Custom Glow Cursor Follower
  * ---------------------------------------------------- */
 function initCustomCursor() {
+  // Don't apply custom cursor on touch devices
+  if ('ontouchstart' in window || navigator.maxTouchPoints > 0) return;
+
   // Large ambient glow follower
   const glow = document.createElement('div');
   glow.className = 'custom-cursor-glow';
   document.body.appendChild(glow);
 
-  // Small precise dot at cursor tip
+  // Glowing dot - acts as the actual visible cursor
   const dot = document.createElement('div');
   dot.className = 'cursor-dot';
   document.body.appendChild(dot);
 
+  // Outer ring - trails slightly behind for premium feel
+  const ring = document.createElement('div');
+  ring.className = 'cursor-ring';
+  document.body.appendChild(ring);
+
+  let mouseX = 0, mouseY = 0;
+  let ringX = 0, ringY = 0;
+
+  // Track mouse position
   window.addEventListener('mousemove', (e) => {
-    glow.style.left = `${e.clientX}px`;
-    glow.style.top = `${e.clientY}px`;
-    dot.style.left = `${e.clientX}px`;
-    dot.style.top = `${e.clientY}px`;
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+
+    // Dot and glow follow instantly
+    dot.style.left = `${mouseX}px`;
+    dot.style.top = `${mouseY}px`;
+    glow.style.left = `${mouseX}px`;
+    glow.style.top = `${mouseY}px`;
   });
 
-  // Detect hover over interactive elements to expand the dot
+  // Ring trails behind smoothly using requestAnimationFrame
+  function animateRing() {
+    ringX += (mouseX - ringX) * 0.15;
+    ringY += (mouseY - ringY) * 0.15;
+    ring.style.left = `${ringX}px`;
+    ring.style.top = `${ringY}px`;
+    requestAnimationFrame(animateRing);
+  }
+  animateRing();
+
+  // Detect hover over interactive elements
   const interactiveSelectors = 'a, button, .btn, .skill-card, .project-card, .cert-card, .nav-link, .nav-action-btn, input, textarea, .tab-btn, .filter-btn';
   document.addEventListener('mouseover', (e) => {
     if (e.target.closest(interactiveSelectors)) {
       dot.classList.add('hovering');
+      ring.classList.add('hovering');
     }
   });
   document.addEventListener('mouseout', (e) => {
     if (e.target.closest(interactiveSelectors)) {
       dot.classList.remove('hovering');
+      ring.classList.remove('hovering');
     }
   });
 }
