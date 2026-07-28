@@ -33,22 +33,6 @@
   --shadow-glow: 0 0 25px rgba(0, 242, 254, 0.25);
 }
 
-/* Light Mode Overrides */
-body.light-mode {
-  --bg-primary: #f1f5f9;
-  --bg-secondary: #ffffff;
-  --bg-glass: rgba(255, 255, 255, 0.85);
-  --bg-glass-card: rgba(255, 255, 255, 0.6);
-  --bg-glass-hover: rgba(241, 245, 249, 0.9);
-
-  --text-main: #0f172a;
-  --text-muted: #475569;
-  --text-dim: #64748b;
-
-  --border-glass: rgba(15, 23, 42, 0.12);
-  --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.08);
-}
-
 /* Reset & Basic Setup */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -230,9 +214,6 @@ h1, h2, h3, h4 {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
 }
 
-body.light-mode .navbar.scrolled {
-  background: rgba(255, 255, 255, 0.9);
-}
 
 .navbar-container {
   display: flex;
@@ -266,7 +247,7 @@ body.light-mode .navbar.scrolled {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 32px;
   list-style: none;
 }
 
@@ -277,7 +258,7 @@ body.light-mode .navbar.scrolled {
   font-size: 0.95rem;
   transition: var(--transition-fast);
   position: relative;
-  padding: 6px 0;
+  padding: 6px 10px;
 }
 
 .nav-link:hover, .nav-link.active {

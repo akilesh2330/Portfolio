@@ -630,25 +630,8 @@ function initCustomCursor() {
  * 13. Dark / Light Theme Toggle State
  * ---------------------------------------------------- */
 function initThemeToggle() {
-  const themeToggleBtn = document.getElementById('theme-toggle-btn');
-  if (!themeToggleBtn) return;
-
-  const currentTheme = localStorage.getItem('theme') || 'dark';
-  if (currentTheme === 'light') {
-    document.body.classList.add('light-mode');
-    themeToggleBtn.innerHTML = '🌙 Dark Mode';
-  } else {
-    themeToggleBtn.innerHTML = '☀️ Light Mode';
-  }
-
-  themeToggleBtn.addEventListener('click', () => {
-    document.body.classList.toggle('light-mode');
-    const isLight = document.body.classList.contains('light-mode');
-    localStorage.setItem('theme', isLight ? 'light' : 'dark');
-    themeToggleBtn.innerHTML = isLight ? '🌙 Dark Mode' : '☀️ Light Mode';
-    playSound(600, 0.05);
-    showToast(`Switched to ${isLight ? 'Light' : 'Dark'} Mode!`);
-  });
+  document.body.classList.remove('light-mode');
+  localStorage.removeItem('theme');
 }
 
 /* ----------------------------------------------------
