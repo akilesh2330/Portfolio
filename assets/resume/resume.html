@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akilesh K - Resume | AI & Data Science Engineering Student</title>
+  <style>
+    :root {
+      --primary: #0f172a;
+      --accent: #2563eb;
+      --text: #1e293b;
+      --muted: #64748b;
+      --border: #e2e8f0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', -apple-system, Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background: #f8fafc;
+      padding: 40px 20px;
+      line-height: 1.5;
+    }
+    .resume-container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+      border: 1px solid var(--border);
+    }
+    header {
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 16px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .header-name {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .header-subtitle {
+      font-size: 15px;
+      color: var(--accent);
+      font-weight: 600;
+      margin-top: 4px;
+    }
+    .contact-info {
+      text-align: right;
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    .contact-info a { color: var(--accent); text-decoration: none; font-weight: 500; }
+    section { margin-bottom: 22px; }
+    h2.section-heading {
+      font-size: 16px;
+      text-transform: uppercase;
+      color: var(--primary);
+      letter-spacing: 1px;
+      border-bottom: 1.5px solid var(--border);
+      padding-bottom: 4px;
+      margin-bottom: 12px;
+      font-weight: 700;
+    }
+    .edu-item, .project-item, .cert-item { margin-bottom: 14px; }
+    .item-header { display: flex; justify-content: space-between; font-weight: 600; font-size: 14.5px; }
+    .item-sub { font-size: 13.5px; color: var(--accent); font-weight: 500; margin: 2px 0 6px 0; }
+    ul.item-bullets { padding-left: 18px; font-size: 13.5px; color: var(--text); }
+    ul.item-bullets li { margin-bottom: 4px; }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      row-gap: 8px;
+      font-size: 13.5px;
+    }
+    .skills-label { font-weight: 600; color: var(--primary); }
+    .actions-bar {
+      max-width: 800px;
+      margin: 0 auto 20px auto;
+      display: flex;
+      justify-content: flex-end;
+      gap: 12px;
+    }
+    .btn-print {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      padding: 8px 18px;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    @media print {
+      body { padding: 0; background: #fff; }
+      .resume-container { box-shadow: none; border: none; padding: 0; width: 100%; max-width: 100%; }
+      .actions-bar { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="actions-bar">
+    <button onclick="window.print()" class="btn-print">🖨️ Print / Save as PDF</button>
+  </div>
+
+  <div class="resume-container">
+    <header>
+      <div>
+        <h1 class="header-name">AKILESH K</h1>
+        <div class="header-subtitle">DATA SCIENCE STUDENT</div>
+      </div>
+      <div class="contact-info">
+        📞 6374171882 | 📧 <a href="mailto:akilesh2330@gmail.com">akilesh2330@gmail.com</a><br>
+        🔗 <a href="https://www.linkedin.com/in/akilesh230307" target="_blank">LinkedIn: Akilesh K</a><br>
+        💻 <a href="https://github.com/akilesh2330" target="_blank">github.com/akilesh2330</a>
+      </div>
+    </header>
+
+    <!-- About Me -->
+    <section>
+      <h2 class="section-heading">About Me</h2>
+      <p style="font-size:13.5px; color:var(--text);">
+        Aspiring AI and Data Science professional with strong knowledge of Java, Python, DSA, DBMS and Machine Learning. Interested in applying technical skills to solve real-world problems while gaining practical experience and contributing to innovative projects.
+      </p>
+    </section>
+
+    <!-- Education -->
+    <section>
+      <h2 class="section-heading">Education</h2>
+      <div class="edu-item">
+        <div class="item-header">
+          <span>Dr. N.G.P. Institute of Technology, Coimbatore</span>
+        </div>
+        <div class="item-sub">B.Tech – Artificial Intelligence & Data Science</div>
+        <ul class="item-bullets">
+          <li>5th Semester | Current CGPA: 7.6 | Expected Graduation: 2028</li>
+        </ul>
+      </div>
+      <div class="edu-item" style="margin-top: 10px;">
+        <div class="item-header">
+          <span>Srinivasa Vidhyalaya Matric Hr.Sec.School</span>
+        </div>
+        <div class="item-sub">State Board of School Education</div>
+        <ul class="item-bullets">
+          <li>10th-Percentage: 76.6% | 12th-Percentage: 72.67%</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Skill -->
+    <section>
+      <h2 class="section-heading">Skill</h2>
+      <ul class="item-bullets">
+        <li><strong>Programming Languages:</strong> Python, Java, R Language</li>
+        <li><strong>Data Structures & Algorithms (DSA)</strong></li>
+        <li><strong>Database Management Systems (MYSQL)</strong></li>
+        <li><strong>Machine Learning & Artificial Intelligence</strong></li>
+        <li><strong>Problem Solving & Logical Thinker</strong></li>
+      </ul>
+    </section>
+
+    <!-- Internship -->
+    <section>
+      <h2 class="section-heading">Internship</h2>
+      <div class="cert-item">
+        <div class="item-header">
+          <span>Nextskill Technologies Pvt. Ltd. — Certificate of Training Completion</span>
+        </div>
+        <ul class="item-bullets">
+          <li>Completed an internship training program in Full Stack Development (May 2026)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Certifications & Events -->
+    <section>
+      <h2 class="section-heading">Certifications & Events</h2>
+      <div class="cert-item" style="margin-bottom: 10px;">
+        <div class="item-header">
+          <span>Kumaraguru College of Technology (KCT), Coimbatore</span>
+        </div>
+        <div class="item-sub">Code2Duo – Coding Event</div>
+        <ul class="item-bullets">
+          <li>Participated in the Code2Duo competitive programming event, demonstrating problem-solving and coding skills.</li>
+        </ul>
+      </div>
+      <div class="cert-item">
+        <div class="item-header">
+          <span>Basics of Data Structures & Algorithms – Simplilearn SkillUp</span>
+        </div>
+        <ul class="item-bullets">
+          <li>Completed an online certification focused on Data Structures, Algorithms and coding fundamentals to enhance logical thinking and programming skills.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Project -->
+    <section>
+      <h2 class="section-heading">Project</h2>
+      <div class="project-item">
+        <div class="item-header">
+          <span>AI-Based Government Scholarship Finder & Application Optimizer</span>
+        </div>
+        <ul class="item-bullets">
+          <li>Developed an AI-powered scholarship recommendation platform that matches students with eligible government scholarships based on their profiles.</li>
+        </ul>
+      </div>
+      <div class="project-item">
+        <div class="item-header">
+          <span>Touchless Eye Blink Authentication</span>
+        </div>
+        <ul class="item-bullets">
+          <li>Built a touchless, AI-powered eye-blink authentication system using real-time computer vision (EAR-based blink detection) and iris/retina features, with liveness detection and low-light/spectacle support - no extra hardware needed.</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
