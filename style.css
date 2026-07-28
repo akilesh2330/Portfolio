@@ -59,6 +59,14 @@ body {
   overflow-x: hidden;
   position: relative;
   transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: url('assets/icons/cursor-default.svg') 3 2, auto;
+}
+
+/* Custom themed cursor for interactive elements */
+a, button, .btn, .skill-card, .project-card, .cert-card,
+.nav-link, .nav-action-btn, .mobile-menu-btn, input, textarea,
+[role="button"], .tab-btn, .filter-btn {
+  cursor: url('assets/icons/cursor-pointer.svg') 7 2, pointer;
 }
 
 /* Preloader Loading Screen */
@@ -126,6 +134,28 @@ body {
   transform: translate(-50%, -50%);
   z-index: 9999;
   transition: transform 0.08s ease-out;
+}
+
+/* Small cyan dot that follows cursor precisely */
+.cursor-dot {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent-cyan);
+  box-shadow: 0 0 12px rgba(0, 242, 254, 0.8), 0 0 24px rgba(0, 242, 254, 0.4);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 10000;
+  transition: width 0.2s ease, height 0.2s ease, background 0.2s ease;
+}
+
+/* Cursor dot expands on hover over interactive elements */
+.cursor-dot.hovering {
+  width: 14px;
+  height: 14px;
+  background: var(--accent-purple);
+  box-shadow: 0 0 16px rgba(127, 0, 255, 0.8), 0 0 32px rgba(127, 0, 255, 0.4);
 }
 
 /* Background Canvas */

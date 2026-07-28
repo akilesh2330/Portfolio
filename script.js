@@ -616,13 +616,34 @@ function initStatsCounter() {
  * 12. Custom Glow Cursor Follower
  * ---------------------------------------------------- */
 function initCustomCursor() {
-  const cursor = document.createElement('div');
-  cursor.className = 'custom-cursor-glow';
-  document.body.appendChild(cursor);
+  // Large ambient glow follower
+  const glow = document.createElement('div');
+  glow.className = 'custom-cursor-glow';
+  document.body.appendChild(glow);
+
+  // Small precise dot at cursor tip
+  const dot = document.createElement('div');
+  dot.className = 'cursor-dot';
+  document.body.appendChild(dot);
 
   window.addEventListener('mousemove', (e) => {
-    cursor.style.left = `${e.clientX}px`;
-    cursor.style.top = `${e.clientY}px`;
+    glow.style.left = `${e.clientX}px`;
+    glow.style.top = `${e.clientY}px`;
+    dot.style.left = `${e.clientX}px`;
+    dot.style.top = `${e.clientY}px`;
+  });
+
+  // Detect hover over interactive elements to expand the dot
+  const interactiveSelectors = 'a, button, .btn, .skill-card, .project-card, .cert-card, .nav-link, .nav-action-btn, input, textarea, .tab-btn, .filter-btn';
+  document.addEventListener('mouseover', (e) => {
+    if (e.target.closest(interactiveSelectors)) {
+      dot.classList.add('hovering');
+    }
+  });
+  document.addEventListener('mouseout', (e) => {
+    if (e.target.closest(interactiveSelectors)) {
+      dot.classList.remove('hovering');
+    }
   });
 }
 
