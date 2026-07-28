@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akilesh K | AI & Data Science Engineering Student</title>
+  
+  <!-- Primary SEO Meta Tags -->
+  <meta name="title" content="Akilesh K | AI & Data Science Engineering Student">
+  <meta name="description" content="Portfolio of Akilesh K, 3rd Year B.Tech Artificial Intelligence and Data Science Engineering Student at Dr. N.G.P. Institute of Technology. Machine Learning, Computer Vision, and Full Stack Developer.">
+  <meta name="keywords" content="Akilesh K, AI Engineer, Data Science, Machine Learning, Python Developer, OpenCV, Computer Vision, Portfolio, Dr. N.G.P. Institute of Technology, Coimbatore">
+  <meta name="author" content="Akilesh K">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook / LinkedIn Social Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://akilesh2330.github.io/portfolio/">
+  <meta property="og:title" content="Akilesh K | AI & Data Science Engineering Student">
+  <meta property="og:description" content="Future AI Engineer & Full Stack Developer specializing in Machine Learning, Computer Vision, and Data Structures.">
+  <meta property="og:image" content="https://akilesh2330.github.io/portfolio/assets/images/profile.jpg">
+
+  <!-- Twitter Card Tags -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://akilesh2330.github.io/portfolio/">
+  <meta property="twitter:title" content="Akilesh K | AI & Data Science Engineering Student">
+  <meta property="twitter:description" content="Future AI Engineer & Full Stack Developer specializing in Machine Learning, Computer Vision, and Data Structures.">
+  <meta property="twitter:image" content="https://akilesh2330.github.io/portfolio/assets/images/profile.jpg">
+
+  <!-- JSON-LD Structured Data Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Akilesh K",
+    "jobTitle": "Artificial Intelligence & Data Science Engineering Student",
+    "worksFor": {
+      "@type": "EducationalOrganization",
+      "name": "Dr. N.G.P. Institute of Technology"
+    },
+    "url": "https://akilesh2330.github.io/portfolio/",
+    "sameAs": [
+      "https://github.com/akilesh2330",
+      "https://www.linkedin.com/in/akilesh230307",
+      "https://leetcode.com/u/Akileshavinash/"
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Preloader Screen -->
+  <div id="preloader">
+    <div class="spinner"></div>
+    <div class="preloader-text">LOADING PORTFOLIO...</div>
+  </div>
+
+  <!-- Top Scroll Progress Bar -->
+  <div id="scroll-progress-bar"></div>
+
+  <!-- Animated Particle Canvas Background -->
+  <canvas id="space-canvas"></canvas>
+
+  <!-- Sticky Glass Navbar -->
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <a href="#hero" class="nav-brand">
+        <img src="assets/images/profile.jpg" alt="Akilesh K" class="brand-avatar" onerror="this.src='profile.jpg'">
+        <span class="brand-name">Akilesh<span class="gradient-text">.K</span></span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#leetcode" class="nav-link">LeetCode DSA</a></li>
+        <li><a href="#core-cs" class="nav-link">Core CS</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#resume" class="nav-link">Resume</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="theme-toggle-btn" class="nav-action-btn" title="Toggle Dark/Light Mode">☀️ Light Mode</button>
+        <button id="sound-toggle-btn" class="nav-action-btn" title="Toggle Sound Effects">🔊 Sound On</button>
+        <button id="terminal-toggle" class="btn-terminal" title="Launch AI Shell">&gt;_ Ask AI</button>
+        <button id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Toggle Menu">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          <span>🟢 Open for AI/ML & SDE Campus Placement Hiring (2026/2027)</span>
+        </div>
+
+        <p style="font-size: 1.25rem; color: var(--text-muted); margin-bottom: 4px;">Hello, I'm</p>
+        <h1 class="hero-title">
+          <span class="gradient-text">Akilesh K</span>
+        </h1>
+
+        <div class="hero-degree-subtitle">
+          3rd Year B.Tech Artificial Intelligence & Data Science Student
+        </div>
+
+        <div class="typewriter-container">
+          <span id="typewriter-text"></span><span class="cursor-blink">|</span>
+        </div>
+
+        <p class="hero-bio">
+          Future AI Engineer | Full Stack Developer | Algorithm Problem Solver.<br>
+          Studying at Dr. N.G.P. Institute of Technology, crafting intelligent computer vision models, machine learning pipelines, and robust full-stack web applications.
+        </p>
+
+        <div class="hero-cta">
+          <a href="assets/resume/resume.pdf" target="_blank" class="btn btn-primary">
+            View Resume (PDF) 📄
+          </a>
+          <a href="#leetcode" class="btn btn-secondary">
+            LeetCode DSA 🧩
+          </a>
+          <a href="#projects" class="btn btn-secondary">
+            View Projects 🚀
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            Contact Me ✉️
+          </a>
+          <a href="https://github.com/akilesh2330" target="_blank" class="btn btn-secondary" title="GitHub Profile">
+            GitHub 💻
+          </a>
+          <a href="https://www.linkedin.com/in/akilesh230307" target="_blank" class="btn btn-secondary" title="LinkedIn Profile">
+            LinkedIn 🔗
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number" data-target="3">0</span>
+            <span class="stat-label">Core Projects</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="7.6">0</span>
+            <span class="stat-label">Current CGPA</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="8">0</span>
+            <span class="stat-label">Tech Stack Tools</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="profile-card-glow">
+          <div class="profile-img-container">
+            <img src="assets/images/profile.jpg" alt="Akilesh K" class="profile-img" onerror="this.src='profile.jpg'">
+          </div>
+          <div class="floating-badge badge-top-right">
+            <span>👁️</span> Computer Vision
+          </div>
+          <div class="floating-badge badge-bottom-left">
+            <span>🧠</span> Machine Learning
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Background & Objectives</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <p class="section-desc">Passionate engineering student pursuing excellence in Artificial Intelligence & Data Science.</p>
+      </div>
+
+      <div class="glass-panel about-grid">
+        <div class="about-text">
+          <h3>Professional Summary</h3>
+          <br>
+          <p>
+            Aspiring AI and Data Science professional with strong knowledge of Java, Python, DSA, DBMS and Machine Learning. Interested in applying technical skills to solve real-world problems while gaining practical experience and contributing to innovative projects.
+          </p>
+
+          <h3 style="margin-top: 20px;">Education Background</h3>
+          <br>
+          <p>
+            Currently pursuing B.Tech in Artificial Intelligence & Data Science (5th Semester | CGPA: 7.6 | Expected Graduation: 2028) at Dr. N.G.P. Institute of Technology, Coimbatore. Completed Schooling at Srinivasa Vidhyalaya Matric Hr.Sec.School (10th: 76.6% | 12th: 72.67%).
+          </p>
+
+          <div class="about-highlights">
+            <div class="highlight-box">
+              <div class="highlight-title">Current Semester</div>
+              <div class="highlight-value">5th Semester (CGPA: 7.6)</div>
+            </div>
+            <div class="highlight-box">
+              <div class="highlight-title">Degree Program</div>
+              <div class="highlight-value">B.Tech AI & Data Science</div>
+            </div>
+            <div class="highlight-box">
+              <div class="highlight-title">College Institution</div>
+              <div class="highlight-value">Dr. N.G.P. Institute of Technology</div>
+            </div>
+            <div class="highlight-box">
+              <div class="highlight-title">Schooling</div>
+              <div class="highlight-value">Srinivasa Vidhyalaya Matric</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-tech-matrix">
+          <div class="highlight-box" style="margin-bottom: 16px;">
+            <div class="highlight-title">Core Competencies</div>
+            <div class="highlight-value">Problem Solving, DSA, Team Leadership</div>
+          </div>
+          <div class="highlight-box" style="margin-bottom: 16px;">
+            <div class="highlight-title">Coding Profile</div>
+            <div class="highlight-value"><a href="https://leetcode.com/u/Akileshavinash/" target="_blank" style="color:var(--accent-cyan); text-decoration:none; font-weight:600;">🧩 LeetCode (@Akileshavinash) ↗</a></div>
+          </div>
+          <div class="highlight-box" style="margin-bottom: 16px;">
+            <div class="highlight-title">Work Ethics</div>
+            <div class="highlight-value">Continuous Learning & Ethical AI</div>
+          </div>
+          <div class="highlight-box">
+            <div class="highlight-title">Target Role</div>
+            <div class="highlight-value">AI / Machine Learning Engineer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Technical Competencies</span>
+        <h2 class="section-title">Skills & <span class="gradient-text">Expertise</span></h2>
+        <p class="section-desc">Interactive, glowing cards showcasing my technical stack across domains.</p>
+      </div>
+
+      <div class="skills-tabs">
+        <button class="skill-tab-btn active" data-tab="all">All Skills</button>
+        <button class="skill-tab-btn" data-tab="languages">Programming Languages</button>
+        <button class="skill-tab-btn" data-tab="frameworks">Frameworks & ML</button>
+        <button class="skill-tab-btn" data-tab="tools">Database & Tools</button>
+        <button class="skill-tab-btn" data-tab="dsa">DSA & LeetCode</button>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Languages -->
+        <div class="skill-card skill-category" data-category="languages">
+          <div class="skill-card-top">
+            <span class="skill-icon">🐍</span>
+            <span class="skill-name">Python</span>
+          </div>
+          <p style="color:var(--text-muted); font-size:0.85rem;">Machine Learning, OpenCV, Flask & Data Science</p>
+        </div>
+
+        <div class="skill-card skill-category" data-category="languages">
+          <div class="skill-card-top">
+            <span class="skill-icon">☕</span>
+            <span class="skill-name">Java</span>
+          </div>
+          <p style="color:var(--text-muted); font-size:0.85rem;">Object-Oriented Programming & DSA</p>
+        </div>
+
+        <div class="skill-card skill-category" data-category="languages">
+          <div class="skill-card-top">
+            <span class="skill-icon">📊</span>
+            <span class="skill-name">R Language</span>
+          </div>
+          <p style="color:var(--text-muted); font-size:0.85rem;">Statistical Computing & Data Analysis</p>
+        </div>
+
+        <div class="skill-card skill-category" data-category="languages">
+          <div class="skill-card-top">
+            <span class="skill-icon">⚡</span>
+            <span class="skill-name">JavaScript</span>
+          </div>
+          <p style="color:var(--text-muted); font-size:0.85rem;">ES6+, DOM Manipulation, Interactive Web UI</p>
+        </div>
+
+        <div class="skill-card skill-category" data-category="languages">
+          <div class="skill-card-top">
+            <span class="skill-icon">🗄️</span>
+            <span class="skill-name">SQL</span>
+          </div>
+          <p style="color:var(--text-muted); font-size:0.85rem;">Relational Database Design & Queries</p>
+        </div>
+
+        <div class="skill-card skill-category" data-category="languages">
+          <div class="skill-card-top">
+            <span class="skill-icon">🌐</span>
+            <span class="skill-name">HTML & CSS</span>
+          </div>
+          <p style="color:var(--text-muted); font-size:0.85rem;">Semantic Layouts & Glassmorphism Styling</p>
+        </div>
+
+        <!-- Frameworks & ML -->
+        <div class="skill-card skill-category" data-category="frameworks">
+          <div class="skill-card-top">
+            <span class="skill-icon">🧪</span>
+            <span class="skill-name">Flask</span>
+          </div>
+          <p style="color:var(--text-muted); font-size:0.85rem;">Python Microframework & Backend APIs</p>
+        </div>
+
+        <div class="skill-card skill-category" data-category="frameworks">
+          <div class="skill-card-top">
+            <span class="skill-icon">🎨</span>
+            <span class="skill-name">Bootstrap</span>
+          </div>
+          <p style="color:var(--text-muted); font-size:0.85rem;">Responsive Frontend UI Framework</p>
+        </div>
+
+        <div class="skill-card skill-category" data-category="frameworks">
+          <div class="skill-card-top">
+            <span class="skill-icon">🧠</span>
+            <span class="skill-name">Machine Learning</span>
+          </div>
+          <p style="color:var(--text-muted); font-size:0.85rem;">Scikit-learn, Classification, Regression & Random Forest</p>
+        </div>
+
+        <div class="skill-card skill-category" data-category="frameworks">
+          <div class="skill-card-top">
+            <span class="skill-icon">📊</span>
+            <span class="skill-name">Data Science</span>
+          </div>
+          <p style="color:var(--text-muted); font-size:0.85rem;">Pandas, NumPy, Matplotlib & Exploratory Analysis</p>
+        </div>
+
+        <!-- Database & Tools -->
+        <div class="skill-card skill-category" data-category="tools">
+          <div class="skill-card-top">
+            <span class="skill-icon">🐬</span>
+            <span class="skill-name">MySQL</span>
+          </div>
+          <p style="color:var(--text-muted); font-size:0.85rem;">Relational Database Management & Schema Design</p>
+        </div>
+
+        <div class="skill-card skill-category" data-category="tools">
+          <div class="skill-card-top">
+            <span class="skill-icon">🌿</span>
+            <span class="skill-name">Git & GitHub</span>
+          </div>
+          <p style="color:var(--text-muted); font-size:0.85rem;">Version Control & Collaborative Code Repositories</p>
+        </div>
+
+        <div class="skill-card skill-category" data-category="tools">
+          <div class="skill-card-top">
+            <span class="skill-icon">💻</span>
+            <span class="skill-name">VS Code & Jupyter</span>
+          </div>
+          <p style="color:var(--text-muted); font-size:0.85rem;">IDE & Notebook Environments for AI Development</p>
+        </div>
+
+        <!-- Problem Solving -->
+        <div class="skill-card skill-category" data-category="dsa">
+          <div class="skill-card-top">
+            <span class="skill-icon">🧩</span>
+            <span class="skill-name">DSA & LeetCode</span>
+          </div>
+          <p style="color:var(--text-muted); font-size:0.85rem;">Data Structures, Algorithms & Problem Solving</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LeetCode & Problem Solving Section -->
+  <section id="leetcode" class="leetcode-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Algorithmic Problem Solving</span>
+        <h2 class="section-title">LeetCode & <span class="gradient-text">DSA Performance</span></h2>
+        <p class="section-desc">Active problem solver practicing Data Structures, Algorithms, and Optimal Space-Time Complexity.</p>
+      </div>
+
+      <div class="glass-panel leetcode-card">
+        <div class="leetcode-header">
+          <div class="leetcode-user-info">
+            <div class="leetcode-avatar">🧩</div>
+            <div>
+              <h3 style="font-size: 1.3rem; margin-bottom: 2px;">Akilesh K <span style="font-size:0.85rem; color:var(--accent-cyan); font-weight:400;">(@Akileshavinash)</span></h3>
+              <p style="color:var(--text-muted); font-size: 0.9rem;">LeetCode Candidate & Problem Solver</p>
+            </div>
+          </div>
+          <a href="https://leetcode.com/u/Akileshavinash/" target="_blank" class="btn btn-primary" style="padding: 8px 18px; font-size:0.9rem;">
+            View LeetCode Profile ↗
+          </a>
+        </div>
+
+        <div class="leetcode-topics-grid">
+          <div class="dsa-topic-pill">
+            <span class="dsa-topic-icon">⚡</span>
+            <div>
+              <div class="dsa-topic-title">Arrays & Strings</div>
+              <div class="dsa-topic-desc">Sliding Window, Two Pointers, Prefix Sum</div>
+            </div>
+          </div>
+          <div class="dsa-topic-pill">
+            <span class="dsa-topic-icon">🌳</span>
+            <div>
+              <div class="dsa-topic-title">Trees & Traversals</div>
+              <div class="dsa-topic-desc">BST, Inorder/Preorder, Depth-First Search</div>
+            </div>
+          </div>
+          <div class="dsa-topic-pill">
+            <span class="dsa-topic-icon">🕸️</span>
+            <div>
+              <div class="dsa-topic-title">Graphs & BFS/DFS</div>
+              <div class="dsa-topic-desc">Shortest Path, Connected Components, Grid Traversals</div>
+            </div>
+          </div>
+          <div class="dsa-topic-pill">
+            <span class="dsa-topic-icon">🎯</span>
+            <div>
+              <div class="dsa-topic-title">Dynamic Programming</div>
+              <div class="dsa-topic-desc">Memoization, Tabulation, Subsequence Problems</div>
+            </div>
+          </div>
+          <div class="dsa-topic-pill">
+            <span class="dsa-topic-icon">🔍</span>
+            <div>
+              <div class="dsa-topic-title">Searching & Sorting</div>
+              <div class="dsa-topic-desc">Binary Search, QuickSort, MergeSort</div>
+            </div>
+          </div>
+          <div class="dsa-topic-pill">
+            <span class="dsa-topic-icon">🔑</span>
+            <div>
+              <div class="dsa-topic-title">Hash Maps & Sets</div>
+              <div class="dsa-topic-desc">Fast Lookup, Frequency Counting, Collision Handling</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core CS Fundamentals Section -->
+  <section id="core-cs" class="core-cs-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Engineering Fundamentals</span>
+        <h2 class="section-title">Core <span class="gradient-text">Computer Science</span></h2>
+        <p class="section-desc">Key technical domains mastered for technical placement interviews & software engineering.</p>
+      </div>
+
+      <div class="core-cs-grid">
+        <div class="core-cs-card">
+          <div class="core-cs-icon">🧩</div>
+          <h3>Data Structures & Algorithms</h3>
+          <p style="color:var(--text-muted); font-size:0.88rem; margin-top:8px;">
+            Arrays, Linked Lists, Trees, Graphs, Sorting, Dynamic Programming, Big-O Notation & Time-Space Complexity Analysis.
+          </p>
+        </div>
+
+        <div class="core-cs-card">
+          <div class="core-cs-icon">🗄️</div>
+          <h3>DBMS & SQL Architecture</h3>
+          <p style="color:var(--text-muted); font-size:0.88rem; margin-top:8px;">
+            Relational Schema Design, Complex Queries, Joins, Indexing, Normalization (1NF-3NF), ACID Compliance, and MySQL.
+          </p>
+        </div>
+
+        <div class="core-cs-card">
+          <div class="core-cs-icon">💻</div>
+          <h3>Operating Systems</h3>
+          <p style="color:var(--text-muted); font-size:0.88rem; margin-top:8px;">
+            Process Management, Threads, Synchronization, Memory Allocation, Virtual Memory, Deadlocks & File System Architecture.
+          </p>
+        </div>
+
+        <div class="core-cs-card">
+          <div class="core-cs-icon">🏗️</div>
+          <h3>Object-Oriented Programming</h3>
+          <p style="color:var(--text-muted); font-size:0.88rem; margin-top:8px;">
+            Encapsulation, Inheritance, Polymorphism, Abstraction, Design Patterns, and Clean Code Principles in Java & Python.
+          </p>
+        </div>
+
+        <div class="core-cs-card">
+          <div class="core-cs-icon">🧠</div>
+          <h3>ML Model Lifecycle</h3>
+          <p style="color:var(--text-muted); font-size:0.88rem; margin-top:8px;">
+            Data Preprocessing, Feature Selection, Model Training, Hyperparameter Tuning, Cross-Validation & Metric Evaluation.
+          </p>
+        </div>
+
+        <div class="core-cs-card">
+          <div class="core-cs-icon">🌐</div>
+          <h3>Computer Networks & APIs</h3>
+          <p style="color:var(--text-muted); font-size:0.88rem; margin-top:8px;">
+            TCP/IP Protocol Suite, HTTP/HTTPS Verbs, RESTful API Architecture, Client-Server Model & Network Security Basics.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Portfolio Projects</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-desc">Production-grade projects built with Machine Learning, Computer Vision, and Web Engineering.</p>
+      </div>
+
+      <div class="project-filters">
+        <button class="project-filter-btn active" data-filter="all">All Projects</button>
+        <button class="project-filter-btn" data-filter="aiml">AI & ML</button>
+        <button class="project-filter-btn" data-filter="cv">Computer Vision</button>
+        <button class="project-filter-btn" data-filter="web">Web Development</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card" data-category="cv aiml">
+          <div>
+            <span class="project-category-badge">Computer Vision & AI</span>
+            <h3 class="project-title">AI-Based Eye Blink Authentication System</h3>
+            <p class="project-desc">
+              An AI-powered authentication system using real-time computer vision that recognizes unique eye blink patterns (EAR calculation) for touchless and secure biometrics login.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">OpenCV</span>
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag">Machine Learning</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/akilesh2330" target="_blank" class="project-link-btn">
+              GitHub Repo <span>💻</span>
+            </a>
+            <a href="javascript:void(0)" onclick="openModal('project1-demo')" class="project-link-btn">
+              Live Preview <span>👁️</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" data-category="web">
+          <div>
+            <span class="project-category-badge">Full Stack E-Commerce</span>
+            <h3 class="project-title">TechHub - Electronics Web App</h3>
+            <p class="project-desc">
+              A modern e-commerce CRUD web application for laptops, GPUs, processors, and electronics featuring user authentication, cart checkout, admin dashboard, and MySQL database integration.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag">MySQL</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/akilesh2330" target="_blank" class="project-link-btn">
+              GitHub Repo <span>💻</span>
+            </a>
+            <a href="javascript:void(0)" onclick="openModal('project2-demo')" class="project-link-btn">
+              Live Preview <span>🛍️</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" data-category="aiml web">
+          <div>
+            <span class="project-category-badge">AI Recommendation Engine</span>
+            <h3 class="project-title">Scholarship Finder Platform</h3>
+            <p class="project-desc">
+              An AI-powered scholarship recommendation platform matching students with eligible government and private scholarships based on academic, financial, and demographic profiles.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag">Machine Learning</span>
+              <span class="tech-tag">NLP</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/akilesh2330" target="_blank" class="project-link-btn">
+              GitHub Repo <span>💻</span>
+            </a>
+            <a href="javascript:void(0)" onclick="openModal('project3-demo')" class="project-link-btn">
+              Live Preview <span>🎓</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Internship & Certifications Section -->
+  <section id="certifications">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Internship, Events & Training</span>
+        <h2 class="section-title">Internship & <span class="gradient-text">Certifications</span></h2>
+        <p class="section-desc">Training completion, competitive coding events, and verified skill certifications.</p>
+      </div>
+
+      <div class="certs-grid">
+        <div class="cert-card">
+          <div class="cert-icon">💼</div>
+          <h3 class="cert-title">Full Stack Development Internship</h3>
+          <p style="color:var(--accent-cyan); font-size:0.9rem;">Nextskill Technologies Pvt. Ltd.</p>
+          <p style="color:var(--text-muted); font-size:0.85rem; margin-top:6px;">Certificate of Training Completion (May 2026)</p>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon">🏆</div>
+          <h3 class="cert-title">Code2Duo Coding Event</h3>
+          <p style="color:var(--accent-cyan); font-size:0.9rem;">Kumaraguru College of Technology (KCT)</p>
+          <p style="color:var(--text-muted); font-size:0.85rem; margin-top:6px;">Competitive programming & algorithmic problem solving</p>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon">⚡</div>
+          <h3 class="cert-title">Basics of DSA</h3>
+          <p style="color:var(--accent-cyan); font-size:0.9rem;">Simplilearn SkillUp</p>
+          <p style="color:var(--text-muted); font-size:0.85rem; margin-top:6px;">Data Structures, Algorithms & Fundamentals</p>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon">🎓</div>
+          <h3 class="cert-title">Human Computer Interaction</h3>
+          <p style="color:var(--accent-cyan); font-size:0.9rem;">NPTEL (Elite Grade)</p>
+          <p style="color:var(--text-muted); font-size:0.85rem; margin-top:6px;">UI/UX Design, Ergonomics & Human Factors</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Extracurricular Highlights</span>
+        <h2 class="section-title">Achievements & <span class="gradient-text">Activities</span></h2>
+        <p class="section-desc">Recognition earned across competitions, paper presentations, and leadership.</p>
+      </div>
+
+      <div class="achievements-grid">
+        <div class="achievement-card">
+          <div class="achievement-icon">🏆</div>
+          <h3>Hackathons</h3>
+          <p style="color:var(--text-muted); font-size:0.9rem; margin-top:8px;">
+            Participated in national level AI & Web Hackathons engineering real-time prototype solutions under time constraints.
+          </p>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-icon">📄</div>
+          <h3>Paper Presentations</h3>
+          <p style="color:var(--text-muted); font-size:0.9rem; margin-top:8px;">
+            Presented technical papers on Computer Vision Biometrics and Touchless Authentication Systems.
+          </p>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-icon">💻</div>
+          <h3>Coding Competitions</h3>
+          <p style="color:var(--text-muted); font-size:0.9rem; margin-top:8px;">
+            Active problem solver on LeetCode solving Data Structures & Algorithm challenges.
+          </p>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-icon">👥</div>
+          <h3>Leadership Activities</h3>
+          <p style="color:var(--text-muted); font-size:0.9rem; margin-top:8px;">
+            Led a 3-member development team in constructing biometrics authentication software.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Curriculum Vitae</span>
+        <h2 class="section-title">My <span class="gradient-text">Resume</span></h2>
+        <p class="section-desc">Download or preview my full official academic and professional resume.</p>
+      </div>
+
+      <div class="glass-panel resume-box">
+        <h3 style="font-size: 1.5rem; margin-bottom: 12px;">Akilesh K - Official Resume</h3>
+        <p style="color: var(--text-muted); margin-bottom: 24px;">
+          Includes detailed breakdown of B.Tech AI & DS coursework, technical skills, project repositories, and certifications.
+        </p>
+
+        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+          <a href="assets/resume/resume.pdf" download="Akilesh_K_Resume.pdf" class="btn btn-primary">
+            Download Resume PDF <span>⬇️</span>
+          </a>
+          <a href="assets/resume/resume.pdf" target="_blank" class="btn btn-secondary">
+            Preview PDF <span>👁️</span>
+          </a>
+          <a href="assets/resume/resume.html" target="_blank" class="btn btn-secondary">
+            Interactive Web Resume 📄
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Get In Touch</span>
+        <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+        <p class="section-desc">Feel free to reach out for internship opportunities, project collaborations, or tech queries.</p>
+      </div>
+
+      <div class="glass-panel contact-grid">
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <br>
+          <div class="contact-info-list">
+            <div class="contact-item">
+              <div class="contact-icon">📧</div>
+              <div class="contact-text">
+                <label>Email Address</label>
+                <span>akilesh2330@gmail.com</span>
+              </div>
+              <button class="copy-btn" data-copy="akilesh2330@gmail.com" title="Copy Email">📋</button>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">📞</div>
+              <div class="contact-text">
+                <label>Phone Number</label>
+                <span>+91 6374171882</span>
+              </div>
+              <button class="copy-btn" data-copy="+916374171882" title="Copy Phone">📋</button>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div class="contact-text">
+                <label>Location</label>
+                <span>Coimbatore, Tamil Nadu, India</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">🧩</div>
+              <div class="contact-text">
+                <label>LeetCode Profile</label>
+                <span>leetcode.com/u/Akileshavinash</span>
+              </div>
+              <a href="https://leetcode.com/u/Akileshavinash/" target="_blank" class="copy-btn" style="text-decoration:none;">🔗</a>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">💬</div>
+              <div class="contact-text">
+                <label>WhatsApp</label>
+                <span>+91 6374171882</span>
+              </div>
+              <a href="https://wa.me/916374171882" target="_blank" class="copy-btn" style="text-decoration:none;">💬</a>
+            </div>
+          </div>
+        </div>
+
+        <form id="portfolio-contact-form" class="contact-form">
+          <div class="form-group">
+            <label for="contact-name">Your Name</label>
+            <input type="text" id="contact-name" class="form-control" placeholder="John Doe" required>
+          </div>
+          <div class="form-group">
+            <label for="contact-email">Your Email</label>
+            <input type="email" id="contact-email" class="form-control" placeholder="john@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="contact-subject">Subject</label>
+            <input type="text" id="contact-subject" class="form-control" placeholder="Internship Opportunity / Inquiry" required>
+          </div>
+          <div class="form-group">
+            <label for="contact-message">Your Message</label>
+            <textarea id="contact-message" class="form-control" placeholder="Hello Akilesh, I would like to discuss..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">
+            Send Message 🚀
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <div class="footer-brand">Akilesh<span class="gradient-text">.K</span></div>
+          <p style="color:var(--text-muted); max-width:340px;">
+            Artificial Intelligence & Data Science Engineering Student at Dr. N.G.P. Institute of Technology.
+          </p>
+        </div>
+
+        <div>
+          <h4 style="margin-bottom:12px; font-size:1rem;">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="margin-bottom:12px; font-size:1rem;">Social Media</h4>
+          <ul class="footer-links">
+            <li><a href="https://github.com/akilesh2330" target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/akilesh230307" target="_blank">LinkedIn</a></li>
+            <li><a href="https://leetcode.com/u/Akileshavinash/" target="_blank">LeetCode</a></li>
+            <li><a href="mailto:akilesh2330@gmail.com">Email</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Akilesh K. All rights reserved. Designed & Engineered for GitHub Pages, Netlify & Vercel.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button id="back-to-top" title="Back to Top">↑</button>
+
+  <!-- Terminal AI Assistant Modal -->
+  <div id="terminal-modal" class="modal-overlay">
+    <div class="modal-content" style="max-width:750px; padding:0; background:transparent; border:none; box-shadow:none;">
+      <div class="terminal-window">
+        <div class="terminal-header">
+          <div class="terminal-dots">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+          </div>
+          <span class="terminal-title">Akilesh-AI Placement Recruiter Shell v1.0</span>
+          <button id="terminal-close" class="modal-close" style="position:static; font-size: 1.2rem;">&times;</button>
+        </div>
+        <div class="terminal-body">
+          <div class="terminal-welcome">
+            🤖 <strong>Akilesh's Placement Recruiter Assistant Shell</strong><br>
+            Type <span class="cmd-keyword">help</span> to list commands or try: 
+            <span class="cmd-keyword">why-hire</span>, <span class="cmd-keyword">dsa</span>, <span class="cmd-keyword">projects</span>, <span class="cmd-keyword">skills</span>, <span class="cmd-keyword">resume</span>, <span class="cmd-keyword">contact</span>.
+          </div>
+          <div id="terminal-output"></div>
+          <div class="terminal-input-row">
+            <span class="prompt-user">recruiter@akilesh-ai</span>:<span class="prompt-path">~</span>$&nbsp;
+            <input type="text" id="terminal-input" class="terminal-input" placeholder="Type a command (e.g. why-hire, dsa, projects)..." autocomplete="off">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 1 Live Demo Modal -->
+  <div id="project1-demo" class="modal-overlay">
+    <div class="modal-content" style="max-width: 650px;">
+      <button class="modal-close" onclick="closeModal('project1-demo')">&times;</button>
+      <div style="display:flex; align-items:center; gap:10px; margin-bottom:12px;">
+        <span style="font-size:1.8rem;">👁️</span>
+        <h2 style="font-size:1.4rem;">AI-Based Eye Blink Authentication System</h2>
+      </div>
+      
+      <div style="background:var(--bg-secondary); padding:16px; border-radius:8px; margin-bottom:16px; border:1px solid var(--border-glass);">
+        <h4 style="color:var(--accent-cyan); margin-bottom:6px;">📌 Problem & Architecture Breakdown</h4>
+        <p style="font-size:0.9rem; color:var(--text-muted); line-height:1.5;">
+          Traditional password systems are vulnerable to shoulder surfing and keylogging. This system establishes biometric liveness verification through real-time Eye Aspect Ratio (EAR) blink pattern matching.
+        </p>
+      </div>
+
+      <div style="display:grid; grid-template-columns: 1fr 1fr; gap:12px; margin-bottom:16px;">
+        <div style="background:rgba(0,242,254,0.05); padding:12px; border-radius:6px; border:1px solid rgba(0,242,254,0.2);">
+          <strong style="color:var(--accent-cyan); font-size:0.85rem;">Computer Vision Pipeline</strong>
+          <p style="font-size:0.8rem; color:var(--text-muted); margin-top:4px;">OpenCV + Facial Landmark Detection (68 3D Points) + SciPy Distance Calculation.</p>
+        </div>
+        <div style="background:rgba(0,245,160,0.05); padding:12px; border-radius:6px; border:1px solid rgba(0,245,160,0.2);">
+          <strong style="color:var(--accent-emerald); font-size:0.85rem;">Backend & Web Integration</strong>
+          <p style="font-size:0.8rem; color:var(--text-muted); margin-top:4px;">Flask Python Microservice + Live WebRTC Stream Decoding + Secure Session Management.</p>
+        </div>
+      </div>
+
+      <div style="display:flex; justify-content:space-between; align-items:center;">
+        <a href="https://github.com/akilesh2330" target="_blank" class="btn btn-primary" style="font-size:0.85rem;">
+          View Repository on GitHub 💻
+        </a>
+        <button class="btn btn-secondary" onclick="closeModal('project1-demo')" style="font-size:0.85rem;">Close Modal</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 2 Live Demo Modal -->
+  <div id="project2-demo" class="modal-overlay">
+    <div class="modal-content" style="max-width: 650px;">
+      <button class="modal-close" onclick="closeModal('project2-demo')">&times;</button>
+      <div style="display:flex; align-items:center; gap:10px; margin-bottom:12px;">
+        <span style="font-size:1.8rem;">🛍️</span>
+        <h2 style="font-size:1.4rem;">TechHub - Electronics E-Commerce Platform</h2>
+      </div>
+
+      <div style="background:var(--bg-secondary); padding:16px; border-radius:8px; margin-bottom:16px; border:1px solid var(--border-glass);">
+        <h4 style="color:var(--accent-cyan); margin-bottom:6px;">📌 Full-Stack Web Architecture</h4>
+        <p style="font-size:0.9rem; color:var(--text-muted); line-height:1.5;">
+          A full-stack online marketplace built to demonstrate backend database CRUD engineering, relational data modeling in MySQL, user session security, and cart checkout pipelines.
+        </p>
+      </div>
+
+      <div style="display:grid; grid-template-columns: 1fr 1fr; gap:12px; margin-bottom:16px;">
+        <div style="background:rgba(127,0,255,0.05); padding:12px; border-radius:6px; border:1px solid rgba(127,0,255,0.2);">
+          <strong style="color:var(--accent-purple); font-size:0.85rem;">Database Schema</strong>
+          <p style="font-size:0.8rem; color:var(--text-muted); margin-top:4px;">MySQL Relational Tables (Users, Products, Cart, Orders, Admin Logs) with foreign key constraints.</p>
+        </div>
+        <div style="background:rgba(79,172,254,0.05); padding:12px; border-radius:6px; border:1px solid rgba(79,172,254,0.2);">
+          <strong style="color:var(--accent-blue); font-size:0.85rem;">UI & Security Features</strong>
+          <p style="font-size:0.8rem; color:var(--text-muted); margin-top:4px;">Bcrypt password hashing, SQL injection prevention, administrative inventory management panel.</p>
+        </div>
+      </div>
+
+      <div style="display:flex; justify-content:space-between; align-items:center;">
+        <a href="https://github.com/akilesh2330" target="_blank" class="btn btn-primary" style="font-size:0.85rem;">
+          View Repository on GitHub 💻
+        </a>
+        <button class="btn btn-secondary" onclick="closeModal('project2-demo')" style="font-size:0.85rem;">Close Modal</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 3 Live Demo Modal -->
+  <div id="project3-demo" class="modal-overlay">
+    <div class="modal-content" style="max-width: 650px;">
+      <button class="modal-close" onclick="closeModal('project3-demo')">&times;</button>
+      <div style="display:flex; align-items:center; gap:10px; margin-bottom:12px;">
+        <span style="font-size:1.8rem;">🎓</span>
+        <h2 style="font-size:1.4rem;">Scholarship Finder AI Platform</h2>
+      </div>
+
+      <div style="background:var(--bg-secondary); padding:16px; border-radius:8px; margin-bottom:16px; border:1px solid var(--border-glass);">
+        <h4 style="color:var(--accent-cyan); margin-bottom:6px;">📌 Recommendation Model Breakdown</h4>
+        <p style="font-size:0.9rem; color:var(--text-muted); line-height:1.5;">
+          Matches students with eligible government & STEM scholarships using TF-IDF vectorization and profile eligibility scoring algorithms.
+        </p>
+      </div>
+
+      <div style="display:grid; grid-template-columns: 1fr 1fr; gap:12px; margin-bottom:16px;">
+        <div style="background:rgba(0,245,160,0.05); padding:12px; border-radius:6px; border:1px solid rgba(0,245,160,0.2);">
+          <strong style="color:var(--accent-emerald); font-size:0.85rem;">NLP & Similarity Algorithm</strong>
+          <p style="font-size:0.8rem; color:var(--text-muted); margin-top:4px;">Cosine Similarity matching over normalized text features and qualification vectors.</p>
+        </div>
+        <div style="background:rgba(0,242,254,0.05); padding:12px; border-radius:6px; border:1px solid rgba(0,242,254,0.2);">
+          <strong style="color:var(--accent-cyan); font-size:0.85rem;">Student Dashboard</strong>
+          <p style="font-size:0.8rem; color:var(--text-muted); margin-top:4px;">Interactive filtering by course, annual income, GPA thresholds, and deadline alerts.</p>
+        </div>
+      </div>
+
+      <div style="display:flex; justify-content:space-between; align-items:center;">
+        <a href="https://github.com/akilesh2330" target="_blank" class="btn btn-primary" style="font-size:0.85rem;">
+          View Repository on GitHub 💻
+        </a>
+        <button class="btn btn-secondary" onclick="closeModal('project3-demo')" style="font-size:0.85rem;">Close Modal</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script Core -->
+  <script src="script.js"></script>
+</body>
+</html>
