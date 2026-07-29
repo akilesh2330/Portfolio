@@ -582,29 +582,6 @@ h1, h2, h3, h4 {
   transition: var(--transition-smooth);
 }
 
-.floating-badge {
-  position: absolute;
-  padding: 10px 16px;
-  background: rgba(15, 23, 42, 0.85);
-  border: 1px solid var(--border-glass);
-  backdrop-filter: blur(12px);
-  border-radius: 12px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  box-shadow: var(--shadow-glass);
-  animation: float 4s ease-in-out infinite;
-}
-
-.badge-top-right { top: -15px; right: -15px; }
-.badge-bottom-left { bottom: -15px; left: -15px; animation-delay: -2s; }
-
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-}
 
 /* Glass Panels & Cards */
 .glass-panel {
