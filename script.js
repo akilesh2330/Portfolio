@@ -403,7 +403,8 @@ function initTerminalAI() {
 
     projects: `1. 👁️ <strong>AI Eye Blink Authentication:</strong> Computer vision liveness login (OpenCV + EAR + Flask).<br>
     2. 🛍️ <strong>TechHub E-Commerce:</strong> Full-stack web app with MySQL relational database & Admin CRUD control.<br>
-    3. 🎓 <strong>Scholarship Finder:</strong> AI NLP recommendation engine matching students with grants.`,
+    3. 🎓 <strong>Scholarship Finder:</strong> AI NLP recommendation engine matching students with grants.<br>
+    4. 🏆 <strong>Sports Tournament Management:</strong> Full-stack tournament scheduling & team management (Flask + MySQL).`,
 
     education: `<strong>Degree:</strong> B.Tech Artificial Intelligence and Data Science (3rd Year)<br>
     <strong>College:</strong> Dr. N.G.P. Institute of Technology, Coimbatore<br>
@@ -412,10 +413,12 @@ function initTerminalAI() {
     resume: `📄 <strong>Official Placement Resume:</strong><br>
     Click to view / print official resume PDF: <a href="assets/resume/resume.pdf" target="_blank" style="color:var(--accent-cyan);">assets/resume/resume.pdf ↗</a>`,
 
-    certifications: `- NPTEL: Human Computer Interaction (Elite Grade)<br>
-    - EduPyramids IIT Bombay: JavaScript Training<br>
-    - Great Learning: AI Fundamentals<br>
-    - Simplilearn: Basics of Data Structures & Algorithms`,
+    certifications: `- 🤖 Infosys Springboard: Generative AI Landscape (Sept 2026)<br>
+    - 🧠 Infosys Springboard: Explore Machine Learning using Python (Sept 2026)<br>
+    - 📊 Infosys Springboard: Python for Data Science (Sept 2026)<br>
+    - 🐍 Infosys Springboard: Introduction to Python (Sept 2026)<br>
+    - 🎓 NPTEL: Human Computer Interaction (Elite Grade)<br>
+    - 💼 Nextskill Technologies: Full Stack Web Development Internship`,
 
     contact: `📧 <strong>Email:</strong> akilesh2330@gmail.com<br>
     📞 <strong>Phone:</strong> +91 6374171882<br>
