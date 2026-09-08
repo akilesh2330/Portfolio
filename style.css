@@ -339,21 +339,12 @@ h1, h2, h3, h4 {
   gap: 10px;
 }
 
+#sound-toggle-btn,
+.sound-toggle-btn,
 .nav-action-btn {
-  background: var(--bg-glass-card);
-  border: 1px solid var(--border-glass);
-  color: var(--text-main);
-  padding: 8px 14px;
-  border-radius: 8px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: var(--transition-fast);
-}
-
-.nav-action-btn:hover {
-  border-color: var(--accent-cyan);
-  color: var(--accent-cyan);
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
 }
 
 .mobile-menu-btn {

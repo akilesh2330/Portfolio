@@ -20,6 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initCustomCursor();
   initThemeToggle();
   initButtonRipples();
+  const leftoverSoundBtn = document.getElementById('sound-toggle-btn');
+  if (leftoverSoundBtn) leftoverSoundBtn.remove();
 });
 
 /* ----------------------------------------------------
