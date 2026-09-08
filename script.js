@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initCustomCursor();
   initThemeToggle();
   initButtonRipples();
-  initAudioEffects();
 });
 
 /* ----------------------------------------------------
@@ -706,46 +705,8 @@ function initButtonRipples() {
 }
 
 /* ----------------------------------------------------
- * 15. Web Audio Sound Synthesizer
+ * 15. Audio Effects (Disabled)
  * ---------------------------------------------------- */
-let audioCtx = null;
-let soundEnabled = true;
-
-function initAudioEffects() {
-  const soundToggleBtn = document.getElementById('sound-toggle-btn');
-  if (!soundToggleBtn) return;
-
-  soundToggleBtn.addEventListener('click', () => {
-    soundEnabled = !soundEnabled;
-    soundToggleBtn.innerHTML = soundEnabled ? '🔊 Sound On' : '🔇 Sound Off';
-    if (soundEnabled) playSound(800, 0.05);
-  });
-}
-
-function playSound(freq, duration = 0.05) {
-  if (!soundEnabled) return;
-  try {
-    if (!audioCtx) {
-      audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-    }
-    if (audioCtx.state === 'suspended') {
-      audioCtx.resume();
-    }
-    const osc = audioCtx.createOscillator();
-    const gain = audioCtx.createGain();
-
-    osc.type = 'sine';
-    osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
-
-    gain.gain.setValueAtTime(0.04, audioCtx.currentTime);
-    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration);
-
-    osc.connect(gain);
-    gain.connect(audioCtx.destination);
-
-    osc.start();
-    osc.stop(audioCtx.currentTime + duration);
-  } catch (e) {
-    // Ignore audio errors if blocked
-  }
+function playSound() {
+  // Sound disabled per portfolio preferences
 }
