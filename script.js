@@ -404,9 +404,10 @@ function initTerminalAI() {
     <strong>Core CS:</strong> Data Structures & Algorithms, DBMS, OS, OOPs, Computer Networks`,
 
     projects: `1. 👁️ <strong>AI Eye Blink Authentication:</strong> Computer vision liveness login (OpenCV + EAR + Flask).<br>
-    2. 🛍️ <strong>TechHub E-Commerce:</strong> Full-stack web app with MySQL relational database & Admin CRUD control.<br>
+    2. 🛍️ <strong>TechHub E-Commerce:</strong> Full-stack web app with MySQL relational database &amp; Admin CRUD control.<br>
     3. 🎓 <strong>Scholarship Finder:</strong> AI NLP recommendation engine matching students with grants.<br>
-    4. 🏆 <strong>Sports Tournament Management:</strong> Full-stack tournament scheduling & team management (Flask + MySQL).`,
+    4. 🏆 <strong>Sports Tournament Management:</strong> Full-stack tournament scheduling &amp; team management (Flask + MySQL).<br>
+    5. 🏎️ <strong>Retro Racer:</strong> Browser racing game built with React, TypeScript, Vite &amp; Framer Motion.`,
 
     education: `<strong>Degree:</strong> B.Tech Artificial Intelligence and Data Science (3rd Year)<br>
     <strong>College:</strong> Dr. N.G.P. Institute of Technology, Coimbatore<br>
