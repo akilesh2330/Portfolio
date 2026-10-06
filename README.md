@@ -95,7 +95,7 @@ To run this portfolio locally on your machine:
 ## 📬 Contact & Connect
 
 - **Name**: Akilesh K
-- **Email**: [akileshavinash07@gmail.com](mailto:akileshavinash07@gmail.com)
+- **Email**: [akilavinash2020@gmail.com](mailto:akilavinash2020@gmail.com)
 - **LinkedIn**: [linkedin.com/in/akilesh230307](https://www.linkedin.com/in/akilesh230307)
 - **LeetCode**: [leetcode.com/u/Akileshavinash](https://leetcode.com/u/Akileshavinash/)
 - **GitHub**: [@akilesh2330](https://github.com/akilesh2330)
